@@ -42,6 +42,14 @@ a {
   text-decoration:none;
 }
 
+a:hover{
+  text-decoration: underline;
+}
+
+a:active{
+  color: #1D5672;
+}
+
 a small {
   font-size:11px;
   color:#777;
