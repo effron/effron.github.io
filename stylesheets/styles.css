@@ -87,10 +87,15 @@ a small {
   width: 0;
 }
 
+.link-preview img{
+  width: 100%;
+  height: auto;
+}
+
 .preview-container:hover .link-preview{
   opacity: 1;
   transition: opacity .5s linear;
-  width: auto;
+  width: 450px;
   height: auto;
 }
 
