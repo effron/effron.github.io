@@ -82,8 +82,10 @@ a small {
   left: -500px;
   opacity: 0;
   z-index: 5;
-  height: 0;
-  width: 0;
+  transition: opacity .1s linear;
+  pointer-events: none;
+  width: 450px;
+  height: auto;
 }
 
 .link-preview img{
@@ -94,8 +96,6 @@ a small {
 .preview-container:hover .link-preview{
   opacity: 1;
   transition: opacity .5s linear;
-  width: 450px;
-  height: auto;
 }
 
 .wrapper {
@@ -272,26 +272,15 @@ footer {
   }
 
   .link-preview{
-    position: absolute;
     left: 0px;
     top: -300px;
-    opacity: 0;
-    z-index: 5;
-    height: 0;
-    width: 0;
-  }
-
-  .link-preview img{
-    width: 100%;
-    height: auto;
+    height: 280px;
+    overflow: hidden;
   }
 
   .preview-container:hover .link-preview{
     opacity: 1;
     transition: opacity .5s linear;
-    width: 450px;
-    height: 280px;
-    overflow: hidden;
   }
   
   .project-section{ 
