@@ -157,12 +157,16 @@ var Asteroids = (function() {
     
     if (this.thrust){    
       ctx.fillStyle = "yellow";
-      ctx.beginPath();
-
-      ctx.arc(this.xPos, this.yPos, this.radius, Math.PI/3 + this.angularDirec,
-              2 * Math.PI/3+this.angularDirec, false);
-      ctx.fill();
     }
+    else{
+      ctx.fillStyle = "DarkOrange"
+    }
+    
+    ctx.beginPath();
+
+    ctx.arc(this.xPos, this.yPos, this.radius, Math.PI/3 + this.angularDirec,
+            2 * Math.PI/3+this.angularDirec, false);
+    ctx.fill();
        
     ctx.fillStyle = "black";
     ctx.beginPath();
