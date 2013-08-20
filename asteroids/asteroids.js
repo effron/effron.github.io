@@ -155,13 +155,15 @@ var Asteroids = (function() {
             Math.PI/3+this.angularDirec, false);
     ctx.fill();
     
-    ctx.fillStyle = "yellow";
-    ctx.beginPath();
+    if (this.thrust){    
+      ctx.fillStyle = "yellow";
+      ctx.beginPath();
 
-    ctx.arc(this.xPos, this.yPos, this.radius, Math.PI/3 + this.angularDirec,
-            2 * Math.PI/3+this.angularDirec, false);
-    ctx.fill();
-   
+      ctx.arc(this.xPos, this.yPos, this.radius, Math.PI/3 + this.angularDirec,
+              2 * Math.PI/3+this.angularDirec, false);
+      ctx.fill();
+    }
+       
     ctx.fillStyle = "black";
     ctx.beginPath();
 
